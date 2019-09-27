@@ -1,0 +1,23 @@
+body {
+    background: url(../images/BACKGROUND_IMAGE.jpg);
+}
+
+.header {
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+}
+
+.headertext {
+    width: 800px;
+    font-size: 80px;
+}
+
+.main {
+    padding: 20px;
+    background-color: black;
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    
+}

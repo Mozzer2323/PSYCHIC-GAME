@@ -1,44 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head></head>
+  <head>
+    <meta charset="UTF-8">
+    <title>80'S-PSYCHIC-GAME</title>
+    <script type="text/javascript" src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  
+  <body>
 
+    <div class="header">
+      <img src="assets/images/TEXTBOX-BACKGROUND.png" style="width: 800px", height="300px"> 
+    </div>
 
-<body>
+    <div class="main"></div>
 
-        <script type = "text/javascript">
-
-var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l',
-        'm','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-    
-    var wins = 0;
-    var losses = 0;
-    var guesses = 10;
-    
-        var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
-    
-        console.log(computerChoice)
-
-
-
-        document.onkeypress = function(event) {
-            var userGuess = event.key;
-        
-            if(userGuess === computerChoice){
-                wins++;
-            }else{
-                guesses--;
-            }
-        
-            if(guesses === 0){
-                losses++
-            }
-        
-            document.getElementById('wins').innerHTML = "Wins: " + wins;
-            document.getElementById('losses').innerHTML = "losses: " + losses;
-            document.getElementById('guesses').innerHTML = "Guesses left: " + guesses;
-
-</script>
 
 </body>
+</div>
 
 </html>
